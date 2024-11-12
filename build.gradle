@@ -58,3 +58,9 @@ tasks.withType(Test).configureEach {
         }
     }
 }
+
+tasks.register('browserstack', Test) {
+    useJUnitPlatform {
+        includeTags("browserstack")
+    }
+}
