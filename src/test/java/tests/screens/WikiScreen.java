@@ -10,7 +10,7 @@ import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.id;
 
 public class WikiScreen {
-    SelenideElement
+    public SelenideElement
         search = $(accessibilityId("Search Wikipedia")),
         searchInput = $(id("org.wikipedia.alpha:id/search_src_text"));
     ElementsCollection articleTitles = $$(id("org.wikipedia.alpha:id/page_list_item_title"));
@@ -33,5 +33,4 @@ public class WikiScreen {
         articleTitles.first().click();
         return this;
     }
-
 }

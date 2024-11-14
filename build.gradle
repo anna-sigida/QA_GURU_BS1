@@ -64,3 +64,9 @@ tasks.register('browserstack', Test) {
         includeTags("browserstack")
     }
 }
+
+tasks.register('appium', Test) {
+    useJUnitPlatform {
+        includeTags("appium")
+    }
+}
